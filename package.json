@@ -1,29 +1,57 @@
 {
-  "name": "mesa-hacks",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.9.0",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
-    "eslint": "^9.9.0",
-    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
-    "eslint-plugin-react-refresh": "^0.4.9",
-    "globals": "^15.9.0",
-    "typescript": "^5.5.3",
-    "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
-  }
+    "name": "blaze",
+    "license": "MIT",
+    "version": "0.2.1",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.11.1",
+        "@emotion/styled": "^11.11.0",
+        "@headlessui/react": "^2.1.8",
+        "boring-avatars": "^1.11.1",
+        "clsx": "^2.1.1",
+        "easy-peasy": "^6.0.4",
+        "framer-motion": "^11.5.4",
+        "pocketbase": "^0.21.5",
+        "react": "^18.2.0",
+        "react-cookie": "^6.1.1",
+        "react-dom": "^18.2.0",
+        "react-markdown": "^9.0.1",
+        "react-router-dom": "^6.21.1",
+        "remark-gfm": "^4.0.0"
+    },
+    "devDependencies": {
+        "@babel/plugin-transform-react-jsx": "^7.23.4",
+        "@emotion/babel-plugin-jsx-pragmatic": "^0.2.1",
+        "@heroicons/react": "^2.1.1",
+        "@tailwindcss/forms": "^0.5.7",
+        "@types/react": "^18.2.43",
+        "@types/react-dom": "^18.2.17",
+        "@types/remove-markdown": "^0.3.4",
+        "@typescript-eslint/eslint-plugin": "^6.14.0",
+        "@typescript-eslint/parser": "^6.14.0",
+        "@vitejs/plugin-react": "^4.2.1",
+        "autoprefixer": "^10.4.16",
+        "babel-plugin-macros": "^3.1.0",
+        "eslint": "^8.55.0",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-react-refresh": "^0.4.5",
+        "ky": "^1.1.3",
+        "postcss": "^8.4.32",
+        "remove-markdown": "^0.5.0",
+        "tailwind-scrollbar-hide": "^1.1.7",
+        "tailwindcss": "^3.4.0",
+        "twin.macro": "^3.4.0",
+        "typescript": "^5.2.2",
+        "vite": "^5.0.8",
+        "vite-plugin-banner": "^0.7.1",
+        "vite-plugin-checker": "^0.6.2",
+        "vite-plugin-handlebars": "^1.6.0",
+        "vite-plugin-remove-console": "^2.2.0"
+    }
 }
