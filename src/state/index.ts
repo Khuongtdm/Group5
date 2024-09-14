@@ -1,9 +1,15 @@
-// import { createStore } from 'easy-peasy';
-// import fb, { FireBase } from '@/state/firebase';
+import { createStore } from 'easy-peasy';
+import app, { AppStore } from '@/state/app';
+import user, { UserStore } from '@/state/user';
 
-// export interface ApplicationStore {
-// 	fb: FireBase;
-// }
+export interface ApplicationStore {
+    app: AppStore;
+    user: UserStore;
+}
 
-// const state: ApplicationStore = { fb };
-// export const store = createStore(state);
+const state: ApplicationStore = {
+    app,
+    user,
+};
+
+export const store = createStore(state);

@@ -30,7 +30,7 @@ const Header = () => {
           <DropdownButton as={NavbarItem}>
             <Avatar initials="John Doe" variant="beam" />
           </DropdownButton>
-          <DropdownMenu className="min-w-64" anchor="bottom end">
+          <DropdownMenu className="min-w-64 -mt-1 z-50" anchor="bottom end">
             <DropdownItem href="/user/profile">
               <UserIcon />
               <DropdownLabel>My profile</DropdownLabel>

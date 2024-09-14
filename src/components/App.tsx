@@ -7,14 +7,24 @@ import { routes } from '@/routes';
 import GlobalStyles from '@/assets/styles/GlobalStyles';
 import { Header } from '@/components/elements'
 
+import PocketBase from 'pocketbase';
+
 // state
-// import { store } from '@/state';
-// import { StoreProvider } from 'easy-peasy';
+import { store } from '@/state';
+import { StoreProvider } from 'easy-peasy';
+import { useEffect } from 'react';
 
 
 const App = () => {
+  useEffect(() => {
+    const url = 'https://blaze.pockethost.io/'
+    const client = new PocketBase(url)
+
+		store.getActions().app.setClient(client);
+	}, []);
+
   return (
-    // <StoreProvider store={store}>
+    <StoreProvider store={store}>
     <BrowserRouter>
       <GlobalStyles />
       <Header />
@@ -24,7 +34,7 @@ const App = () => {
         ))}
       </Routes>
     </BrowserRouter>
-    // </StoreProvider>
+    </StoreProvider>
   );
 };
 
