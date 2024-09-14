@@ -1,7 +1,7 @@
-import BlazeDarkLogo from "@/assets/logo/blaze-dark.png";
+import BlazeLogoLight from "@/assets/logo/blaze-light.png";
 
 const Logo = (props: { className: string }) => (
-  <img src={BlazeDarkLogo} alt={"Blaze"} className={props.className} />
+  <img src={BlazeLogoLight} alt={"Blaze"} className={props.className} />
 );
 
 export default Logo;

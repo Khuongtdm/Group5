@@ -1,0 +1,3 @@
+url: http://localhost:5173
+tunnel: 1c0c3dcc-7d52-4955-83c0-c7ef9134a7c7
+credentials-file: /Users/themackabu/.cloudflared/1c0c3dcc-7d52-4955-83c0-c7ef9134a7c7.json

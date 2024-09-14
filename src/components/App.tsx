@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // project
 import { routes } from '@/routes';
 import GlobalStyles from '@/assets/styles/GlobalStyles';
+import { Header } from '@/components/elements'
 
 // state
 // import { store } from '@/state';
@@ -16,6 +17,7 @@ const App = () => {
     // <StoreProvider store={store}>
     <BrowserRouter>
       <GlobalStyles />
+      <Header />
       <Routes>
         {routes.map(({ path, title, component: Page }) => (
           <Route key={path} path={path.replace(/\/$/, '')} element={<Page title={title || ''} />} />
