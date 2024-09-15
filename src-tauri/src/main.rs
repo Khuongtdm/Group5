@@ -117,7 +117,7 @@ fn calculate_average_cost() -> Result<f64, String> {
             "monthly" => amount,
             "yearly" => amount / 12.0,
             "weekly" => amount * 4.0,
-            _ => amount, // Assume monthly for unknown frequencies
+            _ => amount,
         };
     }
 

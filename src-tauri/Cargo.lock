@@ -3,6 +3,20 @@
 version = 3
 
 [[package]]
+name = "Blaze"
+version = "0.1.0"
+dependencies = [
+ "directories",
+ "rusqlite",
+ "serde",
+ "serde_json",
+ "tauri",
+ "tauri-build",
+ "window-shadows",
+ "window-vibrancy",
+]
+
+[[package]]
 name = "addr2line"
 version = "0.24.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2645,20 +2659,6 @@ name = "strsim"
 version = "0.11.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7da8b5736845d9f2fcb837ea5d9e2628564b3b043a70948a3f0b778838c5fb4f"
-
-[[package]]
-name = "subscription-finance-tracker"
-version = "0.1.0"
-dependencies = [
- "directories",
- "rusqlite",
- "serde",
- "serde_json",
- "tauri",
- "tauri-build",
- "window-shadows",
- "window-vibrancy",
-]
 
 [[package]]
 name = "syn"

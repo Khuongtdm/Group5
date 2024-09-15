@@ -23,8 +23,8 @@ import {
 	FaGithub
 } from 'react-icons/fa';
 
+import BlazeLogoDark from './blaze-dark.png';
 import BlazeLogoLight from './blaze-light.png';
-import BlazeLogoDark from './blaze-light.png';
 
 interface Subscription {
 	id?: number;
@@ -175,7 +175,15 @@ const App: React.FC = () => {
 						className="fixed w-full z-50 bg-zinc-100 dark:bg-zinc-900/90 h-7 flex items-center justify-center border-b border-zinc-200 dark:border-zinc-800 backdrop-blur-lg"></div>
 				)}
 
-				<div className="p-4 pt-10">
+				<div className="p-4 pt-10 hide-scrollbar">
+					<div className="flex items-center space-x-2 mb-4">
+						{isDarkMode ? (
+							<img src={BlazeLogoDark} alt="Blaze Logo Dark" className="h-8" />
+						) : (
+							<img src={BlazeLogoLight} alt="Blaze Logo Light" className="h-8" />
+						)}
+						<span className="text-2xl font-light mt-2"> - Subscription Tracker</span>
+					</div>
 					<div className="mb-8">
 						<h2 className="text-xl font-semibold mb-2">Add Subscription</h2>
 						<div className="flex flex-row w-full gap-2 mb-2">
