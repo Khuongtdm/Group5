@@ -1,0 +1,64 @@
+{
+	"build": {
+		"beforeDevCommand": "pnpm dev",
+		"beforeBuildCommand": "pnpm build",
+		"devPath": "http://localhost:1420",
+		"distDir": "../dist"
+	},
+	"package": {
+		"productName": "subscription-finance-tracker",
+		"version": "0.1.0"
+	},
+	"tauri": {
+		"allowlist": {
+			"os": {
+				"all": true
+			},
+			"window": {
+				"all": false,
+				"setSkipTaskbar": true,
+				"setSize": true,
+				"setFocus": true,
+				"setDecorations": true,
+				"setCursorIcon": true,
+				"startDragging": true,
+				"setCursorGrab": true,
+				"setCursorVisible": true,
+				"setFullscreen": true,
+				"maximize": true,
+				"unmaximize": true,
+				"minimize": true,
+				"unminimize": true,
+				"close": true,
+				"show": true,
+				"hide": true,
+				"center": true,
+				"requestUserAttention": true
+			}
+		},
+		"macOSPrivateApi": true,
+		"windows": [
+			{
+				"height": 600,
+				"width": 480,
+				"minHeight": 600,
+				"minWidth": 480,
+				"fullscreen": false,
+				"resizable": true,
+				"title": "Finance Tracker",
+				"titleBarStyle": "Overlay",
+				"decorations": true,
+				"transparent": true
+			}
+		],
+		"security": {
+			"csp": "default-src 'self'; img-src 'self' asset: https://asset.localhost; style-src 'self' 'unsafe-inline'"
+		},
+		"bundle": {
+			"active": true,
+			"targets": "all",
+			"identifier": "com.subscription-finance-tracker.app",
+			"icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"]
+		}
+	}
+}
