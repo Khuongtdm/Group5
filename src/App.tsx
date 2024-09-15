@@ -20,6 +20,7 @@ import {
 	FaInstagram,
 	FaSlack,
 	FaDropbox,
+	FaDiscord,
 	FaGithub
 } from 'react-icons/fa';
 
@@ -47,6 +48,7 @@ const brandIcons: { [key: string]: React.ElementType } = {
 	instagram: FaInstagram,
 	slack: FaSlack,
 	dropbox: FaDropbox,
+	discord: FaDiscord,
 	github: FaGithub
 };
 
