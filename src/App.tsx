@@ -57,7 +57,7 @@ const getBrandIcon = (name: string): React.ElementType | null => {
 			return Icon;
 		}
 	}
-	return null;
+	return BiCreditCard;
 };
 
 const App: React.FC = () => {
